@@ -2,20 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>菜鸟教程(runoob.com)</title>
+    <title>test copy</title>
     <style>
-
+      
     </style>
    </head>
    <body>
-
+      
    </body>
    <script>
-    
-    
-     
-    
-    
+     //浅拷贝
+     // 拷贝内存地址,一个改变另一个也改变
+     //1.
+     let obj1 ={a:1};
+     let obj2 ={};
+      Object.assign(obj2,obj1)
+      //2
+      let obj3 = {...obj1};
+      //3
+      let array = [1,2,3,4,5];
+      let array1 = array.slice();
+        
+
+      // //数组去重
+      // let array = [1,2,3,3,2,1];
+      // let res = array.filter(function(value,index,self){
+      //   return self.indexOf(value)===index;
+      // });
+      // // console.log(res); // [1,2,3]
+      // let array1= [1,2,3,3,2,1];
+      // let res1 = Array.from(new Set(array1)); 
+      // //  console.log(res1); // [1,2,3]
+      // let array2= [1,2,3,3,2,1];
+      // let res2 = array2.reduce((pre,cur)=>{
+      //   if(!pre.includes(cur)){
+      //     return pre.concat(cur);
+      //   }else {
+      //     return pre;
+      //   }
+      // },[]);
+      // console.log(res2); // [1,2,3]
+
+
+      
+
+      
     
    </script>
 </html>
