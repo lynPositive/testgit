@@ -11,6 +11,12 @@
       
    </body>
    <script>
+    var empty ={};
+    function Empty(empty){
+      for(let a in empty){
+        console.log("非空");
+      }
+    }
      //浅拷贝
      // 拷贝内存地址,一个改变另一个也改变
      //1.
@@ -22,8 +28,6 @@
       //3
       let array = [1,2,3,4,5];
       let array1 = array.slice();
-        
-
       // //数组去重
       // let array = [1,2,3,3,2,1];
       // let res = array.filter(function(value,index,self){
@@ -42,12 +46,6 @@
       //   }
       // },[]);
       // console.log(res2); // [1,2,3]
-
-
-      
-
-      
-    
    </script>
 </html>
 
