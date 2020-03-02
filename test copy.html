@@ -86,6 +86,16 @@
                 return fBound;
             }
         }
+
+        // this is XiangZhiming Code
+        function bind(fn, obj) {
+            return function() {
+                return fn.apply(obj);
+            }
+        }
+
+      
+    
    </script>
 </html>
 
